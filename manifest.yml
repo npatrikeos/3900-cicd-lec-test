@@ -1,0 +1,19 @@
+modules:
+  confluence:globalPage:
+    - key: 399900-lecture-hello-world-global-page
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: 399900-lecture
+      route: hello-world
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/fa675a84-dd33-40ec-8651-190fa190be55
