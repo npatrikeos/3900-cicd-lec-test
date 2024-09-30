@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <h1>Hello world!</h1>
-      <Text>{data ? data : 'Loading...'}</Text>
+      <Text>{data ? data : 'Loading........'}</Text>
     </>
   );
 };
